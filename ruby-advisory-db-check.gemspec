@@ -8,10 +8,14 @@ Gem::Specification.new do |spec|
   spec.version       = RubyAdvisoryDbCheck::VERSION
   spec.authors       = ['Torsten Braun']
   spec.email         = ['tbraun@tnt-web-solutions.de']
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.summary       = %q{Automatically check the ruby-advisory-db Database for advisories in your installed Gems.}
+  spec.description   = %q{
+                          This Gem automatically downloads and extracts the ruby-advisory-db Database from Github.
+                          Than it uses bundler and rubygems to check for advisories in your installed Gems by
+                          executing a rake task.
+                       }
+  spec.homepage      = 'https://github.com/tbraun89/ruby-advisory-db-check'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -19,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.5'
-  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rake',    '~> 0'
 end
