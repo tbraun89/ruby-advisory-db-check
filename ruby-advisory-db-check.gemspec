@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ruby_advisory_db_check/version'
+require 'ruby-advisory-db-check/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'ruby-advisory-db-check'
