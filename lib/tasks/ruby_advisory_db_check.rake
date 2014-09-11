@@ -8,7 +8,7 @@ DATABASE_FILE = 'https://github.com/rubysec/ruby-advisory-db/archive/master.zip'
 TEMP_DIR      = 'tmp/check_advisory_db'
 TEMP_FILE     = "#{TEMP_DIR}/master.zip"
 
-namespace :check_advisory_db do
+namespace :advisory_db do
   desc 'Check the Gems for advisories.'
   task :check => :environment do
     global_result = true

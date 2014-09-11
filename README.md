@@ -1,6 +1,8 @@
 # Ruby::Advisory::Db::Check
 
-TODO: Write a gem description
+This Gem provides a rake task that automatically checks your installed Gems
+with the [ruby-advisory-db Database](https://github.com/rubysec/ruby-advisory-db).
+The rake task will fail and output the affected Gems if there are any advisories.
 
 ## Installation
 
@@ -18,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ rake advisory_db:check
 
 ## Contributing
 
