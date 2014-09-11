@@ -1,4 +1,4 @@
-# Ruby::Advisory::Db::Check
+# RubyAdvisoryDbCheck
 
 This Gem provides a rake task that automatically checks your installed Gems
 with the [ruby-advisory-db Database](https://github.com/rubysec/ruby-advisory-db).
