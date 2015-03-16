@@ -24,8 +24,12 @@ Or install it yourself as:
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/ruby-advisory-db-check/fork )
+1. Fork it ( http://github.com/tbraun89/ruby-advisory-db-check/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Articles
+
+ * https://www.tnt-web-solutions.de/blog/2015/03/16/ruby-gem-sicherheit.html (German)
