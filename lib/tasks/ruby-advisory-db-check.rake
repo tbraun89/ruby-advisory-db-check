@@ -44,7 +44,10 @@ namespace :advisory_db do
           advisory['patched_versions'].each    {|i| good_versions << i} if advisory['patched_versions']
 
           good_versions.each do |version|
-            result |= Gem::Dependency.new('', version).match?('', spec.version) rescue result |= false
+            version = version.split(',')
+            version.each do |v|
+              result |= Gem::Dependency.new('', v).match?('', spec.version) rescue result |= false
+            end
           end
 
           unless result
